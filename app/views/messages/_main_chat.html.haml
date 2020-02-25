@@ -10,14 +10,13 @@
     = link_to "#", class: "main-header__edit-btn" do
       Edit
   .message
-    %div{data: {message_id: "#"}}
-      .message__upper-info
-        %p.message__upper-info__talker
-          kenmotsu
-        %p.message__upper-info__date
-          2020/02/20(Thu) 14:11:17
-      .message__text
-        メッセージテキストメッセージテキスト
+    .message__upper-info
+      %p.message__upper-info__talker
+        kenmotsu
+      %p.message__upper-info__date
+        2020/02/20(Thu) 14:11:17
+    .message__text
+      メッセージテキストメッセージテキスト
   .form
     %form{class: "new_message", id: "new_message", enctype: "multipart/form-data", action: "#", charset: "accept-UTF-8", method: "post"}
       %input{name: "utf8", type: "hidden", value: "#"}
