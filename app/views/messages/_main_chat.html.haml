@@ -7,9 +7,9 @@
         SpecialMember:
         %li.main-header__left-box__member-list__member
           けんもつさとし
-    %a{href: "#", class: "main-header__edit-btn"}
+    = link_to "#", class: "main-header__edit-btn" do
       Edit
-  .messages
+  .message
     %div{class: "message", data: {message_id: "#"}}
       .message__upper-info
         %p.message__upper-info__talker
